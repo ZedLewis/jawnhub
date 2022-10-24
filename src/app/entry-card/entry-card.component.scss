@@ -1,0 +1,26 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.inputs{
+    height: 175px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.formButtons {
+    display: flex;
+    align-items: flex-end;
+}
+
+.transactionForm {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+    margin: 8px 0;
+    box-sizing: border-box;
+}

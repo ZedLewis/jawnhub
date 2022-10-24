@@ -1,0 +1,20 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nb-layout-header {
+    display: flex;
+    
+}
+
+.article-card {
+    width: 800px;
+    display: flex;
+    align-self: right;
+
+}
+
+.create {
+    display: flex;
+    width: 350px
+}

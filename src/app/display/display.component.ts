@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { routingComponents } from '../app-routing.module';
 
 @Component({
   selector: 'app-display',

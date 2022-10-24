@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DisplayComponent } from './display/display.component';
-import { HistoryComponent } from './history/history.component';
+import { TransactionsComponent } from './transactions/transactions.component'
+import { LandingPageComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
+  { path: '', component: LandingPageComponent, pathMatch: "full"},
+  { path: 'dashboard', component: LandingPageComponent},
   { path: 'display', component: DisplayComponent},
-  { path: 'history', component: HistoryComponent}
+  { path: 'transactions', component: TransactionsComponent}
 ];
 
 @NgModule({
@@ -13,4 +16,8 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [DisplayComponent, HistoryComponent]
+export const routingComponents = [
+  LandingPageComponent,
+  DisplayComponent, 
+  TransactionsComponent
+]

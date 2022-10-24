@@ -1,0 +1,20 @@
+<nb-card>
+    <nb-card-header>
+        Enter transaction details
+    </nb-card-header>
+    <nb-card-body>
+        <div class="inputs">
+         <form [formGroup]="transactionEntry" class="transactionForm">
+         <input class="form-item" nbInput fullWidth placeholder="Item" formControlName="name"/>
+         <textarea class="form-description" nbInput fullWidth placeholder="Description" formControlName="description"></textarea>
+         <input class="form-item" placeholder="Cost" nbInput fullWidth formControlName="cost"/>
+        </form>
+        </div>
+    </nb-card-body>
+    <nb-card-footer>
+        <div class="formButtons">
+         <button nbButton status="basic" (click)="cancelEntry()">Cancel</button>
+         <button nbButton status="primary" (click)="closeForm()">Create</button>
+        </div>
+    </nb-card-footer>
+</nb-card>

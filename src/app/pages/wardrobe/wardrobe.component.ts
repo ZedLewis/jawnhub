@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { routingComponents } from '../app-routing.module';
+import { routingComponents } from '../../app-routing.module';
 
 @Component({
   selector: 'app-wardrobe',

@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbListModule, NbCardModule, NbButton, NbButtonModule, NbDialogModule, NbInputDirective, NbInputModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { LandingPageComponent } from './dashboard/dashboard.component';
-import { EntryCardComponent } from './entry-card/entry-card.component';
+import { LandingPageComponent } from './pages/dashboard/dashboard.component';
+import { EntryCardComponent } from './pages/entry-card/entry-card.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
 

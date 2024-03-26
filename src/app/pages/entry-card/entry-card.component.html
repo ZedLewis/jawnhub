@@ -8,13 +8,14 @@
          <input class="form-item" nbInput fullWidth placeholder="Item" formControlName="name"/>
          <textarea class="form-description" nbInput fullWidth placeholder="Description" formControlName="description"></textarea>
          <input class="form-item" placeholder="Cost" nbInput fullWidth formControlName="cost"/>
+           <input class="form-item" placeholder="Date" nbInput fullWidth formControlName="date"/>
         </form>
         </div>
     </nb-card-body>
     <nb-card-footer>
         <div class="formButtons">
          <button nbButton status="basic" (click)="cancelEntry()">Cancel</button>
-         <button nbButton status="primary" (click)="createItem()">Create</button>
+         <button nbButton status="primary" (click)="createItem(transactionEntry)">Create</button>
         </div>
     </nb-card-footer>
 </nb-card>

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { NbDialogRef, NbDialogService } from '@nebular/theme';
+import {CreatePurchase} from "../../store/actions/purchase.actions";
+import {AppState} from "../../store/reducers";
+import {Store} from "@ngrx/store";
 
 @Component({
   selector: 'app-entry-card',
@@ -12,17 +15,21 @@ export class EntryCardComponent implements OnInit {
    name: new FormControl(),
    description: new FormControl(),
    cost: new FormControl(),
+    date: new FormControl()
   })
 
   constructor(
-    protected modalService: NbDialogRef<any>
+    protected modalService: NbDialogRef<any>,
+    private store: Store<AppState>
   ) { }
 
   ngOnInit(): void {
   }
 
-  createItem() {
-    this.modalService.close(console.log(this.transactionEntry.value))
+  createItem(transactionEntry: FormGroup) {
+    const payload  = transactionEntry.value
+    this.store.dispatch(CreatePurchase({ payload }))
+    this.modalService.close(console.log(payload))
   }
 
   cancelEntry() {

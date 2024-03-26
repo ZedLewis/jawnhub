@@ -107,5 +107,8 @@
       }
     }
   },
-  "defaultProject": "jawnHub"
+  "defaultProject": "jawnHub",
+  "cli": {
+    "analytics": "8936cc3f-ea5d-4d33-9d53-f82e3d0b3fa1"
+  }
 }

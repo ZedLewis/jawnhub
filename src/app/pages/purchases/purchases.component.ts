@@ -11,11 +11,11 @@ import { EntryCardComponent } from '../entry-card/entry-card.component';
 export class PurchasesComponent implements OnInit {
 
   items = [
-    { name: 'Smile Tee', description: 'The Smile tour tee', cost: 30 },
-    { name: 'Wild Donkey Tee', description: 'Made in Italy vintage inspired tee', cost: 80 },
-    { name: 'OL Jacket', description: 'Waxed Mini Jacket', cost: 450 },
-    { name: 'Full Count Jeans', description: 'Selvedge straight cut denim from Japan', cost: 270 },
-    { name: 'Paraboot Pony Hair', description: 'Hair on cow tyrolean shoes', cost: 390 },
+    { name: 'Smile Tee', description: 'The Smile tour tee', cost: 30, date: '12/02/2022'},
+    { name: 'Wild Donkey Tee', description: 'Made in Italy vintage inspired tee', cost: 80, date: '12/02/2023' },
+    { name: 'OL Jacket', description: 'Waxed Mini Jacket', cost: 450, date: '12/04/2024'},
+    { name: 'Full Count Jeans', description: 'Selvedge straight cut denim from Japan', cost: 270, date: '12/03/2024' },
+    { name: 'Paraboot Pony Hair', description: 'Hair on cow tyrolean shoes', cost: 390, date: '15/03/2024' },
   ];
 
   constructor(

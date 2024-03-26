@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { routingComponents } from '../app-routing.module';
 
 @Component({
-  selector: 'app-display',
-  templateUrl: './display.component.html',
-  styleUrls: ['./display.component.scss']
+  selector: 'app-wardrobe',
+  templateUrl: './wardrobe.component.html',
+  styleUrls: ['./wardrobe.component.scss']
 })
-export class DisplayComponent implements OnInit {
+export class WardrobeComponent implements OnInit {
 
   constructor() { }
 

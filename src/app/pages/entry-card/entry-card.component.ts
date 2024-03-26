@@ -21,7 +21,7 @@ export class EntryCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  closeForm() {
+  createItem() {
     this.modalService.close(console.log(this.transactionEntry.value))
   }
 

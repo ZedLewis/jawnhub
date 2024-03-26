@@ -1,0 +1,33 @@
+<nb-layout>
+  <nb-layout-header>
+    <a routerLink="/dashboard" routerLinkActive= "active">Home</a>
+    <h1>Transaction History</h1>
+  </nb-layout-header>
+ <nb-layout-column>
+
+
+
+   <nb-card-body>
+     <button nbButton status="primary" class="create" (click)="newEntry()">Create entry</button>
+     <table nb-table class="purchase-table">
+       <thead>
+       <tr>
+         <th>Name</th>
+         <th>Description</th>
+         <th>Cost</th>
+       </tr>
+       </thead>
+       <tbody>
+       <tr *ngFor="let item of items">
+         <td>{{ item.name }}</td>
+         <td>{{ item.description }}</td>
+         <td>{{ item.cost | currency:'GBP':'symbol':'1.0-2' }}</td>
+       </tr>
+       </tbody>
+     </table>
+   </nb-card-body>
+
+
+ </nb-layout-column>
+
+</nb-layout>

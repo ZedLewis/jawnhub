@@ -4,17 +4,19 @@
 
 nb-layout-header {
     display: flex;
-    
 }
 
-.article-card {
-    width: 800px;
-    display: flex;
-    align-self: right;
-
+nb-card-body{
+  width: 100vw;
 }
 
 .create {
     display: flex;
-    width: 350px
+    width: 350px;
+  right: 0;
+
+}
+
+.purchase-table{
+  width: 100vw;
 }

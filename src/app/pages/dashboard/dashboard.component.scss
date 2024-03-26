@@ -6,15 +6,20 @@ a :active {
     background-color: rgb(10, 241, 241);
 }
 
-.title-header {
+.header{
+  display: block;
+  width: 100%;
+}
+
+.title {
     display: flex;
+    justify-content: center;
     width: 100%;
-    justify-content: right;
     font-size: x-large;
 }
 
-.menu {
-    width: 250px;
+.navigation a{
+  margin: 1rem;
 }
 
 .definition {
